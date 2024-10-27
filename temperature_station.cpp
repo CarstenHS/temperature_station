@@ -101,7 +101,7 @@ void sendTemp(float temperature, float humidity, String token)
 
     // JSON body for the entity to insert
     String jsonBody = "{"
-                      "\"DeviceId\": \"" + DEVICE_ID + "\","
+                      "\"DeviceId\": \"" + String(DEVICE_ID) + "\","
                       "\"Time\": \"" + date + "\","
                       "\"Temperature\": \"" + String(temperature) + "\","
                       "\"Humidity\": \"" + String(humidity) + "\","
